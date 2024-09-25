@@ -6,7 +6,6 @@ body {
     color: #333;
 }
 
-
 header {
     background-color: #4CAF50;
     color: white;
@@ -24,8 +23,7 @@ section {
 
 /* Style général du conteneur de diaporama */
 .slideshow-container {
-    max-width: 100%;          /* Prend toute la largeur disponible */
-    height: 100vh;            /* Prend toute la hauteur visible de la fenêtre */
+    max-width: 1000px;
     position: relative;
     margin: auto;
 }
@@ -35,11 +33,10 @@ section {
 }
 
 img {
-    width: 100%;              /* Prend toute la largeur du conteneur */
-    height: 100%;             /* Prend toute la hauteur du conteneur */
-    object-fit: contain;      /* Ajuste l'image pour qu'elle soit entièrement visible sans distorsion */
-    display: block;
-    margin: auto;
+    vertical-align: middle;
+    width: 90%;            /* Ajuste la largeur à 90% du conteneur */
+    margin: auto;          /* Centre l'image horizontalement */
+    display: block;        /* Transforme l'image en un bloc pour permettre le centrage */
 }
 
 /* Animation de défilement en fondu */
