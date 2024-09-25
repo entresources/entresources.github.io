@@ -26,9 +26,6 @@ header {
     color: white;
 }
 
-body {
-    margin-top: 80px; /* Crée un espace en haut pour éviter que le contenu soit caché par l'en-tête */
-}
 
 /* Style du titre */
 .header-container h1 {
