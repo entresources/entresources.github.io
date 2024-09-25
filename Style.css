@@ -31,7 +31,7 @@ header {
 .header-container h1 {
     font-size: 50px;
     margin: 0;
-    color: #455A64;
+    color: #37474F;
 }
 
 /* Barre de navigation */
@@ -51,7 +51,7 @@ header {
 }
 
 .navbar a {
-    color: #455A64;
+    color: #37474F;
     text-decoration: none;
     font-size: 40px; /* Taille de police */
     padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
