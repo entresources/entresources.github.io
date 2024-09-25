@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.5);
     color: white;
     position: fixed; /* Fige l'en-tête en haut */
     top: 0; /* Le positionne en haut de la page */
