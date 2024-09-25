@@ -38,6 +38,7 @@ section {
     display: none; /* Masquer toutes les diapositives par défaut */
     opacity: 0; /* Commencer avec une opacité de 0 */
     transition: opacity 5s ease-in-out; /* Transition de l'opacité sur 5 secondes */
+    height: 400px; /* Hauteur fixe pour le diaporama */
 }
 
 .fade {
