@@ -25,7 +25,7 @@ section {
 .container {
     display: flex;               /* Utilisation de flexbox pour disposer les éléments côte à côte */
     justify-content: space-around; /* Espace entre les éléments */
-    margin: 20px;              /* Marge autour de la conteneur */
+    margin: 20px;              /* Marge autour du conteneur */
 }
 
 .slideshow-container {
