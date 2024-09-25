@@ -35,7 +35,14 @@ section {
 }
 
 .mySlides {
-    display: none;
+    display: none; /* Masquer toutes les diapositives par défaut */
+    opacity: 0; /* Commencer avec une opacité de 0 */
+    transition: opacity 1s ease-in-out; /* Transition de l'opacité sur 1 seconde */
+}
+
+.fade {
+    display: block; /* Afficher le bloc */
+    opacity: 1; /* Rendre visible */
 }
 
 img {
