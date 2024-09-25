@@ -155,17 +155,10 @@ footer {
 
 .footer-container {
     display: flex; /* Utilise flexbox pour la mise en page */
-    justify-content: space-between; /* Espace entre les colonnes */
+    justify-content: space-around; /* Espace entre les colonnes */
 }
 
 .footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
     padding: 10px; /* Ajoute un peu d'espace à l'intérieur de chaque colonne */
-}
-
-.column-wide {
-    flex: 2; /* Colonne 1 : 2 parts (1/2 de l'espace total) */
-}
-
-.footer-column:not(.column-wide) {
-    flex: 1; /* Colonnes 2 et 3 : 1 part chacune (1/4 de l'espace total) */
 }
