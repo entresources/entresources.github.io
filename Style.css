@@ -15,42 +15,47 @@ header {
 /* Style pour l'en-tête */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Espace le titre et la barre de navigation */
-    align-items: center; /* Aligne verticalement le titre et la barre de navigation */
-    padding: 20px;
-    background-color: #4CAF50; /* Pour correspondre à la couleur de l'en-tête */
+    justify-content: space-between; /* Aligne le titre et la navigation */
+    align-items: center; /* Aligne verticalement le contenu de l'en-tête */
+    background-color: #4CAF50; /* Couleur de fond de l'en-tête */
+    padding: 1em;
     color: white;
 }
 
 /* Style du titre */
 .header-container h1 {
-    font-size: 24px;
+    font-size: 50px;
     margin: 0;
 }
 
 /* Barre de navigation */
+.navbar {
+    display: flex; /* Affiche les éléments de la barre de navigation sur une ligne */
+}
+
 .navbar ul {
-    display: flex; /* Affiche les liens de navigation sur une ligne */
+    display: flex; /* Affiche les liens de navigation horizontalement */
     list-style-type: none; /* Supprime les puces des éléments de liste */
     padding: 0;
     margin: 0;
 }
 
 .navbar li {
-    margin-left: 20px; /* Espacement entre les liens */
+    margin-left: 20px; /* Espacement entre les boutons */
 }
 
 .navbar a {
-    color: white; /* Rendre les liens blancs pour correspondre à l'en-tête */
+    color: white; /* Texte blanc pour s'adapter à l'en-tête vert */
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
-    background-color: #4CAF50; /* Assortir au fond de l'en-tête */
+    background-color: #333; /* Couleur de fond des boutons */
     border-radius: 5px;
 }
 
 .navbar a:hover {
-    background-color: #45a049; /* Couleur au survol */
+    background-color: #ddd;
+    color: #333; /* Change la couleur du texte lors du survol */
 }
 
 /* Autres styles */
