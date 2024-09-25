@@ -31,7 +31,7 @@ header {
 .header-container h1 {
     font-size: 50px;
     margin: 0;
-    color: #333;
+    color: #FFFFFF;
 }
 
 /* Barre de navigation */
@@ -51,14 +51,14 @@ header {
 }
 
 .navbar a {
-    color: #333;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 40px; /* Taille de police */
     padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
 }
 
 .navbar a:hover {
-    color: #FFFFFF; /* Change la couleur du texte lors du survol */
+    color: #333; /* Change la couleur du texte lors du survol */
     text-decoration: underline; /* Ajoute un soulignement lors du survol */
 }
 
