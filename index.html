@@ -6,64 +6,12 @@
     <meta name="description" content="Entre sources">
     <title>Entresources</title>
     <link rel="stylesheet" href="Style.css"> <!-- Lien vers votre fichier CSS -->
-        <style>
-        /* Styles CSS pour le conteneur principal */
-        .container {
-            display: flex; /* Utiliser flexbox pour le layout */
-            justify-content: space-between; /* Espacement entre les éléments */
-            align-items: flex-start; /* Alignement en haut */
-            margin: 20px; /* Espacement autour du conteneur */
-        }
-
-        .slideshow-container {
-            flex: 0 0 60%; /* Prendre 60% de l'espace, ne pas grandir ou rétrécir */
-            margin-right: 20px; /* Espacement à droite */
-        }
-
-        .info-box {
-            flex: 0 0 35%; /* Prendre 35% de l'espace, ne pas grandir ou rétrécir */
-            padding: 20px; /* Espacement interne */
-            background-color: #f9f9f9; /* Couleur de fond */
-            border: 1px solid #ccc; /* Bordure */
-            border-radius: 5px; /* Coins arrondis */
-        }
-
-        .mySlides img {
-            width: 100%; /* Utiliser 100% de la largeur du conteneur */
-            border-radius: 5px; /* Arrondir les coins des images */
-        }
-
-        /* S'assurer que les images dans les slides sont correctement centrées */
-        .mySlides {
-            display: none; /* Masquer toutes les diapositives par défaut */
-        }
-
-        /* Style pour les diapositives visibles */
-        .fade {
-            animation: fade 1s; /* Animation pour l'effet de transition */
-        }
-
-        @keyframes fade {
-            from { opacity: .4 }
-            to { opacity: 1 }
-        }
-    </style>
+       
 </head>
 <body>
     <header>
         <h1>Bienvenue à Entresources</h1>
     </header>
-
-    <section>
-        <h2>Description</h2>
-        <p>Entresources est un lieu idéal pour vous réunir en famille, entre amis, ainsi que pour vos séminaires d'entreprise.
-
-            Dans un cadre verdoyant entouré d’arbres séculaires et d’étangs, «Entresources» est un lieu insolite pour se reconnecter à la nature.
-            
-            Venez vous ressourcer sous les platanes tricentenaires prix coup de cœur de l'arbre de l'année 2019 !
-            
-            A Augy, dans l’Yonne, à moins de 2h de Paris, 4 kms d’Auxerre et 17 kms de Chablis, le lieu est facilement accessible par l'autoroute A 6.</p>
-    </section>
 
 <div class="slideshow-container">
 
@@ -86,7 +34,20 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
+</div>    
+
+    <section>
+        <h2>Description</h2>
+        <p>Entresources est un lieu idéal pour vous réunir en famille, entre amis, ainsi que pour vos séminaires d'entreprise.
+
+            Dans un cadre verdoyant entouré d’arbres séculaires et d’étangs, «Entresources» est un lieu insolite pour se reconnecter à la nature.
+            
+            Venez vous ressourcer sous les platanes tricentenaires prix coup de cœur de l'arbre de l'année 2019 !
+            
+            A Augy, dans l’Yonne, à moins de 2h de Paris, 4 kms d’Auxerre et 17 kms de Chablis, le lieu est facilement accessible par l'autoroute A 6.</p>
+    </section>
+
+
 <div class="info-box">
     <h3>Le logement</h3>
     <p>Le gîte en ossature bois est parfaitement intégré dans son environnement naturel. Il offre tout le confort nécessaire pour passer de fabuleux moments en famille ou entre amis. Vous pourrez vous retrouver autour de la cheminée pour des soirées conviviales et chaleureuses.
