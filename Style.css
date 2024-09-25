@@ -9,18 +9,17 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    text-align: center;
     padding: 1em;
 }
 
 /* Style pour l'en-tête */
 .header-container {
     display: flex;
-    justify-content: space-between; /* Pour que le titre et la navigation soient à chaque extrémité */
-    align-items: center; /* Aligne verticalement les éléments */
+    justify-content: space-between; /* Espace le titre et la barre de navigation */
+    align-items: center; /* Aligne verticalement le titre et la barre de navigation */
     padding: 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background-color: #4CAF50; /* Pour correspondre à la couleur de l'en-tête */
+    color: white;
 }
 
 /* Style du titre */
@@ -42,68 +41,57 @@ header {
 }
 
 .navbar a {
-    color: #333;
+    color: white; /* Rendre les liens blancs pour correspondre à l'en-tête */
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
-    background-color: #eee;
+    background-color: #4CAF50; /* Assortir au fond de l'en-tête */
     border-radius: 5px;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #45a049; /* Couleur au survol */
 }
 
+/* Autres styles */
 section {
     margin: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Nouveau style pour la mise en page du diaporama */
 .container {
-    display: flex;               /* Utilisation de flexbox pour disposer les éléments côte à côte */
-    justify-content: space-around; /* Espace entre les éléments */
-    margin: 20px;              /* Marge autour du conteneur */
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
 }
 
 .slideshow-container {
-    max-width: 100%;            /* largeur à 100% de la fenêtre */
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
 
 .mySlides {
-    display: none; /* Masquer toutes les diapositives par défaut */
-    opacity: 0; /* Commencer avec une opacité de 0 */
-    transition: opacity 5s ease-in-out; /* Transition de l'opacité sur 5 secondes */
-    height: 700px; /* Hauteur fixe pour le diaporama */
-}
-
-.fade {
-    display: block; /* Afficher le bloc */
-    opacity: 1; /* Rendre visible */
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    height: 700px;
 }
 
 .mySlides img {
-    width: 100%; /* Utiliser 100% de la largeur du conteneur */
-    height: 100%; /* Remplir la hauteur du conteneur */
-    object-fit: cover; /* Maintenir le rapport d'aspect et centrer l'image */
-    border-radius: 5px; /* Arrondir les coins des images */
-}
-
-img {
-    vertical-align: middle;
-    width: 100%;               /* Rendre l'image responsive */
-    height: auto;              /* Garder les proportions de l'image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Animation de défilement en fondu */
 .fade {
-    animation-name: fade;
-    animation-duration: 5s;
+    display: block;
+    opacity: 1;
 }
 
 @keyframes fade {
