@@ -75,6 +75,7 @@ section {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-bottom: 240px; 
 }
 
 .container {
@@ -142,10 +143,6 @@ section {
 /* Modifier l'opacité des boutons au survol */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-}
-
-section {
-    padding-bottom: 240px; 
 }
 
 footer {
