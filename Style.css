@@ -15,6 +15,7 @@ header {
     width: 100%; /* S'assure que l'en-tête prend toute la largeur de l'écran */
     padding: 1em; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour plus de style */
+    z-index: 1000; /* Met l'en-tête au-dessus des autres éléments */
 }
 
 /* Style pour l'en-tête */
@@ -50,9 +51,9 @@ header {
 }
 
 .navbar a {
-    color: #1B5E20; /* Texte blanc pour s'adapter à l'en-tête vert */
-    text-decoration: none; /* Supprime le soulignement */
-    font-size: 16px; /* Taille de police */
+    color: #1B5E20;
+    text-decoration: none;
+    font-size: 40px; /* Taille de police */
     padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
 }
 
@@ -139,7 +140,6 @@ section {
 }
 
 body {
-    padding-top: 80px;
     padding-bottom: 80px; 
 }
 
