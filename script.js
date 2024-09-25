@@ -1,29 +1,46 @@
-let slideIndex = 0;
-showSlides(slideIndex);
+let slideIndex = 0; // Initialiser l'index de la diapositive
+showSlides(); // Appeler la fonction au chargement
 
-// Fonction pour avancer ou reculer les diapositives
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Fonction pour afficher la diapositive courante
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-
-    // Gérer le cycle des diapositives
-    if (n >= slides.length) { slideIndex = 0; }
-    if (n < 0) { slideIndex = slides.length - 1; }
-
-    for (i = 0; i < slides.length; i++) {
+function showSlides() {
+    const slides = document.getElementsByClassName("mySlides");
+    
+    // Réinitialiser l'affichage de toutes les diapositives
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("fade"); // Retirer la classe fade
         slides[i].style.display = "none"; // Masquer toutes les diapositives
     }
+    
+    slideIndex++; // Incrémenter l'index de la diapositive
 
-    slides[slideIndex].style.display = "block"; // Afficher la diapositive courante
+    // Réinitialiser l'index si nécessaire
+    if (slideIndex > slides.length) { slideIndex = 1; } 
+    
+    // Afficher la diapositive courante avec le fondu
+    slides[slideIndex - 1].classList.add("fade");
+    slides[slideIndex - 1].style.display = "block"; // Afficher la diapositive actuelle
+
+    setTimeout(showSlides, 5000); // Changer de diapositive toutes les 5 secondes
 }
 
-// Fonction pour faire défiler automatiquement
-setInterval(function() {
-    slideIndex++;
-    showSlides(slideIndex);
-}, 5000); // Changement automatique toutes les 5 secondes
+// Fonction pour avancer/reculer dans le diaporama
+function plusSlides(n) {
+    slideIndex += n; // Modifier l'index
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    if (slideIndex < 1) { slideIndex = slides.length; }
+    
+    showSlidesManual(slideIndex); // Afficher la diapositive manuellement
+}
+
+function showSlidesManual(index) {
+    const slides = document.getElementsByClassName("mySlides");
+    
+    // Réinitialiser l'affichage de toutes les diapositives
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("fade"); // Retirer la classe fade
+        slides[i].style.display = "none"; // Masquer toutes les diapositives
+    }
+    
+    // Afficher la diapositive courante avec le fondu
+    slides[index - 1].classList.add("fade");
+    slides[index - 1].style.display = "block"; // Afficher la diapositive actuelle
+}
