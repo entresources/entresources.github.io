@@ -32,6 +32,7 @@ header {
 .header-container h1 {
     font-size: 50px;
     margin: 0;
+    color: #1B5E20;
 }
 
 /* Barre de navigation */
