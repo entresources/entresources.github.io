@@ -14,7 +14,7 @@ header {
     top: 0; /* Le positionne en haut de la page */
     width: 100%; /* S'assure que l'en-tête prend toute la largeur de l'écran */
     padding: 1em;
-    z-index: 1000; /* Met l'en-tête au-dessus des autres éléments */
+    z-index: 100; /* Met l'en-tête au-dessus des autres éléments */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour plus de style */
 }
 
