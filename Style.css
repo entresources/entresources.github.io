@@ -29,7 +29,8 @@ header {
 
 /* Style du titre */
 .header-container h1 {
-    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
     margin: 0;
     color: #FFFFFF;
 }
