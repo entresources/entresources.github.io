@@ -10,12 +10,16 @@ function plusSlides(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    if (n >= slides.length) { slideIndex = 0 }
-    if (n < 0) { slideIndex = slides.length - 1 }
+
+    // Gérer le cycle des diapositives
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none"; // Masquer toutes les diapositives
     }
-    slides[slideIndex].style.display = "block";
+
+    slides[slideIndex].style.display = "block"; // Afficher la diapositive courante
 }
 
 // Fonction pour faire défiler automatiquement
@@ -55,5 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         events: blockedDates // Charge initialement les dates bloquées
     });
 
+    calendar.render();
+});
         calendar.render();
     });
