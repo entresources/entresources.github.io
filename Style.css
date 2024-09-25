@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between; /* Aligne le titre et la navigation */
     align-items: center; /* Aligne verticalement le contenu de l'en-tête */
-    background-color: #4CAF50; /* Couleur de fond de l'en-tête */
+    background-color: rgba(76, 175, 80, 0.5);
     color: white;
 }
 
