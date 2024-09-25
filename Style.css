@@ -85,10 +85,9 @@ img {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Styles pour le calendrier */
 #calendar {
-    max-width: 400px;          /* Largeur maximale du calendrier */
-    margin: auto;              /* Centrer le calendrier */
+    max-width: 600px; /* Ajustez la largeur selon vos besoins */
+    margin: auto; /* Centrer le calendrier */
 }
 
 footer {
