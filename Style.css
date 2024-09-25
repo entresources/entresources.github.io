@@ -34,9 +34,6 @@ section {
 
 img {
     vertical-align: middle;
-    width: 90%;            /* Ajuste la largeur à 90% du conteneur */
-    margin: auto;          /* Centre l'image horizontalement */
-    display: block;        /* Transforme l'image en un bloc pour permettre le centrage */
 }
 
 /* Animation de défilement en fondu */
