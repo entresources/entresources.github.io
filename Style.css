@@ -139,6 +139,10 @@ section {
     background-color: rgba(0,0,0,0.8);
 }
 
+body {
+    padding-bottom: 80px; /* Crée un espace en bas de la page */
+}
+
 footer {
     text-align: center;
     padding: 10px;
