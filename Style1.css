@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.5);
+    color: #1B5E20;
+    position: fixed; /* Fige l'en-tête en haut */
+    top: 0; /* Le positionne en haut de la page */
+    width: 100%; /* S'assure que l'en-tête prend toute la largeur de l'écran */
+    padding: 1em; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour plus de style */
+    z-index: 1000; /* Met l'en-tête au-dessus des autres éléments */
+}
+
+/* Style pour l'en-tête */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Aligne le titre et la navigation */
+    align-items: center; /* Aligne verticalement le contenu de l'en-tête */
+    background-color: rgba(76, 175, 80, 0.5);
+    color: white;
+}
+
+
+/* Style du titre */
+.header-container h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex; /* Affiche les éléments de la barre de navigation sur une ligne */
+}
+
+.navbar ul {
+    display: flex; /* Affiche les liens de navigation horizontalement */
+    list-style-type: none; /* Supprime les puces des éléments de liste */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-left: 20px; /* Espacement entre les éléments */
+}
+
+.navbar li:last-child {
+    margin-right: 20px; /* Ajoute un espace à droite du dernier bouton */
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 40px; /* Taille de police */
+    padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
+}
+
+.navbar a:hover {
+    color: #333; /* Change la couleur du texte lors du survol */
+    text-decoration: underline; /* Ajoute un soulignement lors du survol */
+}
+
+
+/* Autres styles */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    height: 700px;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Animation de défilement en fondu */
+.fade {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Boutons de navigation */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Modifier l'opacité des boutons au survol */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
