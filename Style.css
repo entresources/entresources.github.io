@@ -29,7 +29,7 @@ section {
 }
 
 .slideshow-container {
-    max-width: 50%;            /* Limiter la largeur à 50% de la fenêtre */
+    max-width: 100%;            /* largeur à 100% de la fenêtre */
     position: relative;
     margin: auto;
 }
