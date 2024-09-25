@@ -21,9 +21,15 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Style général du conteneur de diaporama */
+/* Nouveau style pour la mise en page du diaporama et du calendrier */
+.container {
+    display: flex;               /* Utilisation de flexbox pour disposer les éléments côte à côte */
+    justify-content: space-around; /* Espace entre les éléments */
+    margin: 20px;              /* Marge autour de la conteneur */
+}
+
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 500px;          /* Largeur maximale du diaporama */
     position: relative;
     margin: auto;
 }
@@ -34,6 +40,8 @@ section {
 
 img {
     vertical-align: middle;
+    width: 100%;               /* Rendre l'image responsive */
+    height: auto;
 }
 
 /* Animation de défilement en fondu */
@@ -60,7 +68,6 @@ img {
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
 }
 
 .next {
@@ -76,6 +83,12 @@ img {
 /* Modifier l'opacité des boutons au survol */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+/* Styles pour le calendrier */
+#calendar {
+    max-width: 400px;          /* Largeur maximale du calendrier */
+    margin: auto;              /* Centrer le calendrier */
 }
 
 footer {
