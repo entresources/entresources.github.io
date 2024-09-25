@@ -29,7 +29,7 @@ section {
 }
 
 .slideshow-container {
-    max-width: 500px;          /* Largeur maximale du diaporama */
+    max-width: 50%;            /* Limiter la largeur à 50% de la fenêtre */
     position: relative;
     margin: auto;
 }
@@ -41,7 +41,7 @@ section {
 img {
     vertical-align: middle;
     width: 100%;               /* Rendre l'image responsive */
-    height: auto;
+    height: auto;              /* Garder les proportions de l'image */
 }
 
 /* Animation de défilement en fondu */
