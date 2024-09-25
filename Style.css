@@ -144,11 +144,28 @@ body {
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Aligne le texte au centre */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur du pied de page */
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.footer-container {
+    display: flex; /* Utilise flexbox pour la mise en page */
+    justify-content: space-between; /* Espace entre les colonnes */
+}
+
+.footer-column {
+    padding: 10px; /* Ajoute un peu d'espace à l'intérieur de chaque colonne */
+}
+
+.column-wide {
+    flex: 2; /* Colonne 1 : 2 parts (1/2 de l'espace total) */
+}
+
+.footer-column:not(.column-wide) {
+    flex: 1; /* Colonnes 2 et 3 : 1 part chacune (1/4 de l'espace total) */
 }
