@@ -13,6 +13,47 @@ header {
     padding: 1em;
 }
 
+/* Style pour l'en-tête */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Pour que le titre et la navigation soient à chaque extrémité */
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style du titre */
+.header-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Barre de navigation */
+.navbar ul {
+    display: flex; /* Affiche les liens de navigation sur une ligne */
+    list-style-type: none; /* Supprime les puces des éléments de liste */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
 section {
     margin: 20px;
     padding: 20px;
@@ -21,7 +62,7 @@ section {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Nouveau style pour la mise en page du diaporama et du calendrier */
+/* Nouveau style pour la mise en page du diaporama */
 .container {
     display: flex;               /* Utilisation de flexbox pour disposer les éléments côte à côte */
     justify-content: space-around; /* Espace entre les éléments */
