@@ -223,5 +223,6 @@ footer {
 
     .footer-container {
         flex-direction: column; /* Empile les colonnes sur mobile */
+        font-size: 15px;
     }
 }
