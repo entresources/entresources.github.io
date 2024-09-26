@@ -166,6 +166,17 @@ video {
     height: auto; /* Maintient les proportions de la vidéo */
 }
 
+.section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.section-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
 footer {
     background-color: #4CAF50; /* Couleur de fond du pied de page */
     color: white; /* Couleur du texte */
@@ -221,11 +232,20 @@ footer {
         margin-left: 10px; /* Réduit l'espacement sur mobile */
     }
 
+    .section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.section-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
     .footer-container {
         flex-direction: column; /* Empile les colonnes sur mobile */
         font-size: 15px;
     }
-    .footer-column p {
-    font-size: 15px;
-}
+
 }
