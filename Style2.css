@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 header {
@@ -71,6 +71,7 @@ header {
 
 /* Autres styles */
 section {
+    padding: 10px;
     margin: 10px;
     background-color: white;
     border-radius: 5px;
