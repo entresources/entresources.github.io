@@ -21,17 +21,17 @@ header {
 /* Style pour l'en-tête */
 .header-container {
     display: flex;
+    flex-direction: column; /* Permet un empilement vertical sur les petits écrans */
     justify-content: space-between; /* Aligne le titre et la navigation */
     align-items: center; /* Aligne verticalement le contenu de l'en-tête */
     background-color: rgba(76, 175, 80, 0.5);
     color: white;
 }
 
-
 /* Style du titre */
 .header-container h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 100px;
+    font-size: 50px; /* Réduit la taille de la police pour les petits écrans */
     margin: 0;
     color: #FFFFFF;
 }
@@ -39,6 +39,7 @@ header {
 /* Barre de navigation */
 .navbar {
     display: flex; /* Affiche les éléments de la barre de navigation sur une ligne */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
 }
 
 .navbar ul {
@@ -59,7 +60,7 @@ header {
 .navbar a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 40px; /* Taille de police */
+    font-size: 20px; /* Réduit la taille de police sur mobile */
     padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
 }
 
@@ -72,7 +73,6 @@ header {
     color: #333; /* Couleur du texte pour le bouton actif */
     text-decoration: underline; /* Garde le soulignement pour le bouton actif */
 }
-
 
 /* Autres styles */
 section {
@@ -87,6 +87,7 @@ section {
     display: flex;
     justify-content: space-around;
     margin: 5px;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
 }
 
 .slideshow-container {
@@ -99,12 +100,13 @@ section {
     display: none;
     opacity: 0;
     transition: opacity 5s ease-in-out;
-    height: 700px;
+    height: auto; /* Change la hauteur pour s'adapter aux images */
+    max-height: 700px; /* Limite la hauteur maximale des images */
 }
 
 .mySlides img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Assure que les images conservent leurs proportions */
     object-fit: cover;
     border-radius: 5px;
 }
@@ -181,7 +183,30 @@ footer {
     justify-content: space-around; /* Espace entre les colonnes */
 }
 
-.footer-column {
-    flex: 1; /* Chaque colonne prend une part égale de l'espace */
-    padding: 10px; /* Ajoute un peu d'espace à l'intérieur de chaque colonne */
+/* Responsive styles */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column; /* Empile les éléments en colonne sur mobile */
+        align-items: center; /* Centre le contenu sur mobile */
+    }
+    
+    .header-container h1 {
+        font-size: 40px; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .navbar a {
+        font-size: 16px; /* Réduit la taille de police pour les liens de navigation sur mobile */
+    }
+
+    .mySlides {
+        height: auto; /* Permet aux images de s'ajuster à la taille de l'écran */
+    }
+
+    .container {
+        flex-direction: column; /* Empile les éléments dans la colonne sur mobile */
+    }
+
+    footer {
+        padding: 20px; /* Augmente le remplissage pour le pied de page sur mobile */
+    }
 }
