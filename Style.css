@@ -21,17 +21,17 @@ header {
 /* Style pour l'en-tête */
 .header-container {
     display: flex;
-    flex-direction: column; /* Permet un empilement vertical sur les petits écrans */
     justify-content: space-between; /* Aligne le titre et la navigation */
     align-items: center; /* Aligne verticalement le contenu de l'en-tête */
     background-color: rgba(76, 175, 80, 0.5);
     color: white;
 }
 
+
 /* Style du titre */
 .header-container h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 50px; /* Réduit la taille de la police pour les petits écrans */
+    font-size: 100px;
     margin: 0;
     color: #FFFFFF;
 }
@@ -39,7 +39,6 @@ header {
 /* Barre de navigation */
 .navbar {
     display: flex; /* Affiche les éléments de la barre de navigation sur une ligne */
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
 }
 
 .navbar ul {
@@ -60,9 +59,8 @@ header {
 .navbar a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 20px; /* Réduit la taille de police sur mobile */
+    font-size: 40px; /* Taille de police */
     padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
-    transition: color 0.3s; /* Ajoute une transition douce pour la couleur */
 }
 
 .navbar a:hover {
@@ -74,6 +72,7 @@ header {
     color: #333; /* Couleur du texte pour le bouton actif */
     text-decoration: underline; /* Garde le soulignement pour le bouton actif */
 }
+
 
 /* Autres styles */
 section {
@@ -88,7 +87,6 @@ section {
     display: flex;
     justify-content: space-around;
     margin: 5px;
-    flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
 }
 
 .slideshow-container {
@@ -101,13 +99,12 @@ section {
     display: none;
     opacity: 0;
     transition: opacity 5s ease-in-out;
-    height: auto; /* Change la hauteur pour s'adapter aux images */
-    max-height: 700px; /* Limite la hauteur maximale des images */
+    height: 700px;
 }
 
 .mySlides img {
     width: 100%;
-    height: auto; /* Assure que les images conservent leurs proportions */
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -182,6 +179,11 @@ footer {
 .footer-container {
     display: flex; /* Utilise flexbox pour la mise en page */
     justify-content: space-around; /* Espace entre les colonnes */
+}
+
+.footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px; /* Ajoute un peu d'espace à l'intérieur de chaque colonne */
 }
 
 /* Responsive styles */
