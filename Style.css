@@ -157,6 +157,8 @@ section {
     border-radius: 10px; /* Ajoute des coins arrondis à la vidéo */
     overflow: hidden; /* Cache tout ce qui dépasse des coins arrondis */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+    display: flex; /* Permet d'utiliser flexbox pour le centrage */
+    justify-content: center; /* Centre la vidéo horizontalement */
 }
 
 video {
