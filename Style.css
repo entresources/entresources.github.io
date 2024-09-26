@@ -219,7 +219,7 @@ footer {
     }
 
     .mySlides {
-        height: 500px; /* Réduction de la hauteur des slides */
+        height: 600px; /* Réduction de la hauteur des slides */
     }
 }
 
@@ -242,7 +242,7 @@ footer {
     }
 
     .mySlides {
-        height: 400px;
+        height: 500px;
     }
 }
 
@@ -266,7 +266,7 @@ footer {
     }
 
     .mySlides {
-        height: 300px;
+        height: 400px;
     }
 }
 
@@ -289,6 +289,6 @@ footer {
     }
 
     .mySlides {
-        height: 200px;
+        height: 300px;
     }
 }
