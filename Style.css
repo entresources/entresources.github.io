@@ -189,6 +189,7 @@ footer {
     .header-container {
         flex-direction: column; /* Empile les éléments en colonne sur mobile */
         align-items: center; /* Centre le contenu sur mobile */
+        padding: 0 10px; /* Ajoute des marges à gauche et à droite */
     }
     
     .header-container h1 {
@@ -210,6 +211,8 @@ footer {
 
     footer {
         padding: 20px; /* Augmente le remplissage pour le pied de page sur mobile */
+        margin: 0 10px; /* Ajoute des marges à gauche et à droite */
+        width: auto; /* Laisse le pied de page s'adapter à la largeur du contenu */
     }
 
     .navbar li {
