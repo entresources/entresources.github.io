@@ -150,6 +150,20 @@ section {
     background-color: rgba(0,0,0,0.8);
 }
 
+.video-container {
+    width: 100%; /* Assure que la vidéo prend 100% de la largeur disponible */
+    max-width: 800px; /* Limite la taille maximale de la vidéo */
+    margin: auto; /* Centre la vidéo horizontalement */
+    border-radius: 10px; /* Ajoute des coins arrondis à la vidéo */
+    overflow: hidden; /* Cache tout ce qui dépasse des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+}
+
+video {
+    width: 100%; /* La vidéo s'adapte à la largeur du conteneur */
+    height: auto; /* Maintient les proportions de la vidéo */
+}
+
 footer {
     background-color: #4CAF50; /* Couleur de fond du pied de page */
     color: white; /* Couleur du texte */
