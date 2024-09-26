@@ -197,55 +197,101 @@ footer {
     padding: 10px; /* Ajoute un peu d'espace à l'intérieur de chaque colonne */
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-    .header-container {
-        flex-direction: column; /* Empile les éléments en colonne sur mobile */
-        align-items: center; /* Centre le contenu sur mobile */
-        padding: 0 10px; /* Ajoute des marges à gauche et à droite */
-    }
-    
+/* Media Queries pour adaptation */
+@media (max-width: 1440px) {
     .header-container h1 {
-        font-size: 15px; /* Réduit la taille de la police pour les petits écrans */
+        font-size: 4rem; /* Réduction de la taille du titre */
     }
 
     .navbar a {
-        font-size: 10px; /* Réduit la taille de police pour les liens de navigation sur mobile */
-    }
-
-    .mySlides {
-        max-height: 100px; /* Limite la hauteur pour les petits écrans */
-        height: auto; /* Permet aux images de s'ajuster à la taille de l'écran */
-    }
-
-    .container {
-        flex-direction: column; /* Empile les éléments dans la colonne sur mobile */
-    }
-
-    footer {
-        padding: 20px; /* Augmente le remplissage pour le pied de page sur mobile */
-        margin: 0 10px; /* Ajoute des marges à gauche et à droite */
-        width: auto; /* Laisse le pied de page s'adapter à la largeur du contenu */
-    }
-
-    .navbar li {
-        margin-left: 10px; /* Réduit l'espacement sur mobile */
+        font-size: 1.5rem;
     }
 
     .section-heading {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
-.section-paragraph {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 14px;
-}
-
-    .footer-container {
-        flex-direction: column; /* Empile les colonnes sur mobile */
-        font-size: 15px;
+        font-size: 3rem;
     }
 
+    .section-paragraph {
+        font-size: 2rem;
+    }
+
+    .mySlides {
+        height: 500px; /* Réduction de la hauteur des slides */
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container h1 {
+        font-size: 3.5rem;
+    }
+
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+    }
+
+    .section-paragraph {
+        font-size: 1.8rem;
+    }
+
+    .mySlides {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container h1 {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .section-paragraph {
+        font-size: 1.5rem;
+    }
+
+    .mySlides {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    .section-paragraph {
+        font-size: 1.2rem;
+    }
+
+    .mySlides {
+        height: 200px;
+    }
 }
