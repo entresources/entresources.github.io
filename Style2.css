@@ -95,3 +95,99 @@ section {
     font-size: 25px;
     text-align: center;
 }
+
+@media (max-width: 1440px) {
+        
+    .header-container h1 {
+        font-size: 2rem; /* Réduction de la taille du titre */
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .section-paragraph {
+        font-size: 1rem;
+    }
+
+    .mySlides {
+        height: 600px; /* Réduction de la hauteur des slides */
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.8rem;
+    }
+
+    .mySlides {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .section-heading {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.7rem;
+    }
+
+    .mySlides {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .section-heading {
+        font-size: 1rem;
+    }
+
+    .section-paragraph {
+        font-size: 0.6rem;
+    }
+
+    .mySlides {
+        height: 300px;
+    }
+}
