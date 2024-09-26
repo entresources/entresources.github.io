@@ -200,19 +200,19 @@ footer {
 /* Media Queries pour adaptation */
 @media (max-width: 1440px) {
     .header-container h1 {
-        font-size: 4rem; /* Réduction de la taille du titre */
+        font-size: 3rem; /* Réduction de la taille du titre */
     }
 
     .navbar a {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .section-heading {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .section-paragraph {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .mySlides {
@@ -222,19 +222,19 @@ footer {
 
 @media (max-width: 1024px) {
     .header-container h1 {
-        font-size: 3.5rem;
-    }
-
-    .navbar a {
-        font-size: 1.2rem;
-    }
-
-    .section-heading {
         font-size: 2.5rem;
     }
 
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
     .section-paragraph {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .mySlides {
@@ -249,7 +249,7 @@ footer {
     }
 
     .header-container h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .navbar {
@@ -262,11 +262,11 @@ footer {
     }
 
     .section-heading {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .section-paragraph {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .mySlides {
@@ -276,7 +276,7 @@ footer {
 
 @media (max-width: 480px) {
     .header-container h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     .navbar a {
@@ -284,11 +284,11 @@ footer {
     }
 
     .section-heading {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .section-paragraph {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .mySlides {
