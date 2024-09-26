@@ -193,15 +193,15 @@ footer {
     }
     
     .header-container h1 {
-        font-size: 40px; /* Réduit la taille de la police pour les petits écrans */
+        font-size: 15px; /* Réduit la taille de la police pour les petits écrans */
     }
 
     .navbar a {
-        font-size: 16px; /* Réduit la taille de police pour les liens de navigation sur mobile */
+        font-size: 10px; /* Réduit la taille de police pour les liens de navigation sur mobile */
     }
 
     .mySlides {
-        max-height: 300px; /* Limite la hauteur pour les petits écrans */
+        max-height: 100px; /* Limite la hauteur pour les petits écrans */
         height: auto; /* Permet aux images de s'ajuster à la taille de l'écran */
     }
 
@@ -221,11 +221,5 @@ footer {
 
     .footer-container {
         flex-direction: column; /* Empile les colonnes sur mobile */
-    }
-}
-
-@media (min-width: 768px) {
-    .header-container h1 {
-        font-size: 50px; /* Taille normale pour les grands écrans */
     }
 }
