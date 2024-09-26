@@ -202,11 +202,11 @@ footer {
 /* Media Queries pour adaptation */
 @media (max-width: 1440px) {
     .header-container h1 {
-        font-size: 1.5rem; /* Réduction de la taille du titre */
+        font-size: 2rem; /* Réduction de la taille du titre */
     }
 
     .navbar a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .section-heading {
@@ -224,11 +224,11 @@ footer {
 
 @media (max-width: 1024px) {
     .header-container h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .navbar a {
-        font-size: 0.4rem;
+        font-size: 1rem;
     }
 
     .section-heading {
@@ -251,7 +251,7 @@ footer {
     }
 
     .header-container h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .navbar {
@@ -260,7 +260,7 @@ footer {
     }
 
     .navbar a {
-        font-size: 0.4rem;
+        font-size: 1rem;
     }
 
     .section-heading {
@@ -278,11 +278,11 @@ footer {
 
 @media (max-width: 480px) {
     .header-container h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .navbar a {
-        font-size: 0.3rem;
+        font-size: 1rem;
     }
 
     .section-heading {
