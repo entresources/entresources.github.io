@@ -225,7 +225,7 @@ footer {
         flex-direction: column; /* Empile les colonnes sur mobile */
         font-size: 15px;
     }
-    .footer-column {
+    .footer-column p {
     font-size: 15px;
 }
 }
