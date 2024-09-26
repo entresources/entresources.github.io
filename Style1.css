@@ -147,3 +147,9 @@ section {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
+.section-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
