@@ -183,7 +183,7 @@ footer {
     background-color: #4CAF50; /* Couleur de fond du pied de page */
     color: white; /* Couleur du texte */
     text-align: center; /* Aligne le texte au centre */
-    padding: 10px; /* Ajoute de l'espace à l'intérieur du pied de page */
+    padding: 5px; /* Ajoute de l'espace à l'intérieur du pied de page */
     position: fixed;
     bottom: 0;
     width: 100%;
