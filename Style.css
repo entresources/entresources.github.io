@@ -60,7 +60,7 @@ header {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 40px; /* Taille de police */
-    padding: 10px 15px; /* Ajoute un peu d'espacement autour du texte */
+    padding: 8px 8px; /* Ajoute un peu d'espacement autour du texte */
 }
 
 .navbar a:hover {
