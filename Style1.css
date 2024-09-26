@@ -38,6 +38,8 @@ header {
 /* Barre de navigation */
 .navbar {
     display: flex; /* Affiche les éléments de la barre de navigation sur une ligne */
+    flex-wrap: wrap;        /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: flex-start;
 }
 
 .navbar ul {
