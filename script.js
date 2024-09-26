@@ -1,9 +1,9 @@
 let slideIndex = 0; // Initialiser l'index de la diapositive
+const slides = document.getElementsByClassName("mySlides"); // Déclare slides globalement
+
 showSlides(); // Appeler la fonction au chargement
 
 function showSlides() {
-    const slides = document.getElementsByClassName("mySlides");
-    
     // Réinitialiser l'affichage de toutes les diapositives
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("fade"); // Retirer la classe fade
@@ -13,7 +13,9 @@ function showSlides() {
     slideIndex++; // Incrémenter l'index de la diapositive
 
     // Réinitialiser l'index si nécessaire
-    if (slideIndex > slides.length) { slideIndex = 1; } 
+    if (slideIndex > slides.length) { 
+        slideIndex = 1; 
+    } 
     
     // Afficher la diapositive courante avec le fondu
     slides[slideIndex - 1].classList.add("fade");
@@ -25,15 +27,17 @@ function showSlides() {
 // Fonction pour avancer/reculer dans le diaporama
 function plusSlides(n) {
     slideIndex += n; // Modifier l'index
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    if (slideIndex < 1) { slideIndex = slides.length; }
+    if (slideIndex > slides.length) { 
+        slideIndex = 1; 
+    }
+    if (slideIndex < 1) { 
+        slideIndex = slides.length; 
+    }
     
     showSlidesManual(slideIndex); // Afficher la diapositive manuellement
 }
 
 function showSlidesManual(index) {
-    const slides = document.getElementsByClassName("mySlides");
-    
     // Réinitialiser l'affichage de toutes les diapositives
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("fade"); // Retirer la classe fade
