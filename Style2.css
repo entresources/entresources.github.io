@@ -13,7 +13,6 @@ header {
     position: fixed; /* Fige l'en-tête en haut */
     top: 0; /* Le positionne en haut de la page */
     width: 100%; /* S'assure que l'en-tête prend toute la largeur de l'écran */
-    padding: 1em; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre pour plus de style */
     z-index: 1000; /* Met l'en-tête au-dessus des autres éléments */
 }
@@ -106,7 +105,6 @@ section {
 
     .navbar a {
         font-size: 1rem;
-        padding: 1rem;
     }
 
     .section-heading {
@@ -130,7 +128,6 @@ section {
 
     .navbar a {
         font-size: 1rem;
-        padding: 1rem;
     }
 
     .section-heading {
@@ -154,7 +151,6 @@ section {
 
     .navbar a {
         font-size: 1rem;
-        padding: 1rem;
     }
 
     .section-heading {
@@ -178,7 +174,6 @@ section {
 
     .navbar a {
         font-size: 1rem;
-        padding: 1rem;
     }
 
     .section-heading {
